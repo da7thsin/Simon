@@ -9,26 +9,26 @@
 .container{
   width: 500px;
   height: 500px;
-  box-shadow: inset 0 0 15px #aaa;
-  background: #111;
+  background: #202020;
 }
 
 .content{
   width: 460px;
   height: 460px;
   overflow: hidden;
-  background: #111;
+  background: #242424;
 }
 
 .center-menu{
   width: 240px;
   height: 240px;
-  background: #111;
+  background: #202020;
   overflow: hidden;
-  box-shadow: 0 0 10px #000;
+  box-shadow: 0 0 5px #000;
 }
 
 .center-menu .section{
+  position: relative;
   width: 100%;
   height: 120px;
 }
@@ -44,25 +44,67 @@
   font-size: 60px;
   color: white;
   line-height: 180px;
+  transition-duration: 0.3s;
 }
 
-.button{
+.power{
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 10px;
+  border-radius: 10px;
+  background: #d7d7d7;
+}
+
+.power:before, .power:after{
+  position: absolute;
+  color: white;
+  top: -2px;
+  font-size: 12px;
+  font-family: sans-serif;
+}
+
+.power:before{
+  content: "off";
+  left: -20px;
+}
+
+.power:after{
+  content: "on";
+  right: -20px;
+}
+
+.power .state{
+  position: absolute;
+  width: 9px;
+  height: 8px;
+  border: 1px solid #d7d7d7;
+  border-radius: 50%;
+  background: #242424;
+}
+
+.off{
+  left: 0;
+}
+
+.on{
+  right: 0;
+}
+
+.color{
   opacity: 0.7;
   position: absolute;
   z-index: -1;
   width: 220px;
   height: 220px;
   background: #f50;
-  transition-duration: 0.5s;
+  transition-duration: 0.3s;
 }
 
-.active{
+.color:active{
   opacity: 1;
-}
-
-.button:hover{
-  opacity: 1;
-  cursor: pointer;
 }
 
 .green{
@@ -87,4 +129,16 @@
   bottom: 0;
   right: 0;
   background: rgb(80, 90, 255);
+}
+
+.button{
+  text-align: center;
+}
+
+.button:hover{
+  cursor: pointer;
+}
+
+.active{
+  opacity: 1;
 }
