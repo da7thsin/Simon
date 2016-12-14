@@ -4,11 +4,12 @@
   <title>Simon</title>
   <meta charset="utf-8">
   <link rel='stylesheet' href='simon.css'>
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
 </head>
 <body>
 
-  <div class="container">
-    <div class="content">
+  <div class="app-container">
+    <div class="app-body">
 
       <div class="center-menu">
         <div class="section top">
@@ -16,7 +17,21 @@
         </div>
 
         <div class="section bottom">
-          <div class="turn-indicator"></div>
+          <div class="container">
+
+            <div class="content screen"></div>
+
+            <div class="content button-container">
+              <div class="button start">
+                <div class="inner-color"></div>
+              </div>
+
+              <div class="button strict">
+                <div class="inner-color"></div>
+              </div>
+            </div>
+
+          </div>
 
           <div class="button power">
             <div class="state off"></div>
