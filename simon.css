@@ -65,18 +65,18 @@
   width: 75px;
   margin-right: 10px;
   opacity: 0.8;
-  background: #fff;
+  background: #C8C8C8;
   box-shadow: inset 0 0 7px #000;
   text-align: center;
   line-height: 55px;
   letter-spacing: 1px;
   font-family: 'VT323', monospace;
   font-size: 40px;
-  color: #676767;
+  color: #443E3E;
   transition-duration: 0.3s;
 }
 
-.button-container{
+.start-strict-container{
   width: 90px;
   display: flex;
   flex-wrap: wrap;
@@ -84,9 +84,7 @@
   align-items: center;
 }
 
-.button-container .button{
-  position: relative;
-  margin: 7px;
+.start-strict-container .button{
   width: 25px;
   height: 25px;
   border-radius: 50%;
@@ -94,8 +92,19 @@
   box-shadow: inset 0 1px 1px #d7d7d7;
 }
 
-.button-container .button:active{
+.start-strict-container .button:active{
   box-shadow: none;
+}
+
+.button-container{
+  position: relative;
+  margin: 7px;
+}
+
+.button-container p{
+  margin: 3px 0 0 0;
+  font-size: 10px;
+  color: #555;
 }
 
 .power{
