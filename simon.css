@@ -1,3 +1,7 @@
+body{
+  background: #a2b9bc;
+}
+
 .app-container, .app-body, .center-menu{
   position: absolute;
   top: 50%;
