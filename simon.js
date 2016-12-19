@@ -215,7 +215,7 @@ var events = function(){
   var game = new Game(player);
 
 
-  $('.color').mousedown(function(){
+  $('.color').click(function(){
     var color = $(this);
 
     if(player.turn){
@@ -239,12 +239,12 @@ var events = function(){
         player.pattern.push('.blue');
       }
 
+      setTimeout(function(){
+        color.removeClass('active');
+      }, 400);
+
       helper.checkPattern(game, player);
     }
-  });
-
-  $('.color').mouseup(function(){
-    $(this).removeClass('active');
   });
 
   $('.start').click(function(){
